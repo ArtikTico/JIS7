@@ -1,14 +1,16 @@
 package by.jrr.learn;
 
 
-import by.jrr.learn.lecture2.DataStructureAndArrays;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class App {
 
-    public static void main(String[] args) throws Exception {
-        for (int x: DataStructureAndArrays.array
-             ) {
-            System.out.println(x);
-        }
+    static Logger logger = LoggerFactory.getLogger(App.class);
+
+    public static void main(String[] args)  {
+        logger.info("Hello");
+        logger.debug("Hello debug");
+        logger.warn("Red");
     }
 }
