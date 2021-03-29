@@ -13,7 +13,7 @@ public class WrapperClasses {
     static Integer intA = 30;
     static Long longA = 40L;
 
-    static Integer intNew = new Integer(30);
+    static Integer intNew = 30;
 
     //TODO: Вещественные числа или числа с плавающей точкой
     static Float floatA = 45.0f;
