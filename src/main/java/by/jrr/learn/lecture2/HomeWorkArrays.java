@@ -7,11 +7,14 @@ import java.util.Arrays;
 
 public class HomeWorkArrays {
     static Logger log = LoggerFactory.getLogger(HomeWorkArrays.class);
+
     int [] numbersList = {2,3,4,5,1,6,9,0,7,10};
+
     static int count = 0;
 
-    int[] revertArrayValue(int[] array) {
+    private int[] revertArrayValue(int[] array) {
       int[] revertedNumberList = new int[array.length];
+
         for (int i = array.length-1; i >= 0 ; i--) {
             revertedNumberList[count] = numbersList[i];
             count++;
@@ -36,6 +39,7 @@ public class HomeWorkArrays {
     public static void main(String[] args) {
         var homeWorkArrays = new HomeWorkArrays();
         Arrays.sort(homeWorkArrays.numbersList);
+
         int[] revertedArray = homeWorkArrays.revertArrayValue(homeWorkArrays.numbersList);
         log.info(Arrays.toString(revertedArray));
         homeWorkArrays.mergingArrays(homeWorkArrays.numbersList,revertedArray);

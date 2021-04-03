@@ -1,9 +1,7 @@
-package by.jrr.learn.service;
+package by.jrr.learn.lecture3And4.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class DogTest {
 

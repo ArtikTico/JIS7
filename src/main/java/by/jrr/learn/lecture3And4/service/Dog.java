@@ -1,4 +1,4 @@
-package by.jrr.learn.service;
+package by.jrr.learn.lecture3And4.service;
 
 public class Dog {
     static int counter = 0;
