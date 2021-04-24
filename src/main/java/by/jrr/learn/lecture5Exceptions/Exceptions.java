@@ -7,6 +7,8 @@ import java.util.Objects;
 
 public class Exceptions {
     static Logger log = LoggerFactory.getLogger(Exceptions.class);
+    Throwable throwable;
+    Exception exception;
 
     public static final String SUCCESS = "SUCCESS";
     public static final String FAIL = "FAIL";
