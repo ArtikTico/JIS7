@@ -5,6 +5,8 @@ import java.util.Objects;
 public class Dog {
     private String name;
 
+    private DogStatus dogStatus;
+
     private Integer age;
 
     public String getName() {
