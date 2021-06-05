@@ -1,0 +1,5 @@
+optional\repository\ProductLibrary.class
+optional\service\ProductServiceImpl.class
+optional\service\ProductService.class
+optional\model\Product.class
+optional\App.class
