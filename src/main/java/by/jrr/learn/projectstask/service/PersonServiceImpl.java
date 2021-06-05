@@ -22,7 +22,7 @@ public class PersonServiceImpl implements PersonService {
                 .flatMap(it -> it.getSkill().stream())
                 .filter(it -> Objects.equals(it.getName(), languageName))
                 .max(Comparator.comparing(Skill::getKnownPercentage))
-                .stream().findFirst().orElseThrow();
+                .orElseThrow(IllegalArgumentException::new);
     }
 
 }
