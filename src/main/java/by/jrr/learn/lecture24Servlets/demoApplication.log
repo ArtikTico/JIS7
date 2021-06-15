@@ -1,0 +1,24 @@
+15 Jun 2021 20:40:13,737 [main] - Creating user with username Meliodas
+15 Jun 2021 20:40:13,739 [main] - Meliodas user has been created and added in database successfully
+15 Jun 2021 20:40:13,740 [main] - Creating user with username Robocop
+15 Jun 2021 20:40:13,740 [main] - Robocop user has been created and added in database successfully
+15 Jun 2021 20:40:13,741 [main] - Creating user with username Luntik
+15 Jun 2021 20:40:13,741 [main] - Luntik user has been created and added in database successfully
+15 Jun 2021 20:41:23,881 [main] - Creating user with username Soolstice
+15 Jun 2021 20:41:23,883 [main] - Soolstice user has been created and added in database successfully
+15 Jun 2021 20:44:26,252 [main] - User with username Luntik has been deleted successfully
+15 Jun 2021 20:44:45,449 [main] - Getting user lists
+15 Jun 2021 20:44:58,794 [main] - Getting user with username Meliodas
+15 Jun 2021 20:45:09,463 [main] - Getting user with username SomeName
+15 Jun 2021 20:46:41,867 [main] - Creating user with username Meliodas
+15 Jun 2021 20:46:41,870 [main] - Meliodas user has been created and added in database successfully
+15 Jun 2021 20:46:41,870 [main] - Creating user with username Robocop
+15 Jun 2021 20:46:41,871 [main] - Robocop user has been created and added in database successfully
+15 Jun 2021 20:46:41,871 [main] - Creating user with username Luntik
+15 Jun 2021 20:46:41,871 [main] - Luntik user has been created and added in database successfully
+15 Jun 2021 20:46:41,871 [main] - Creating user with username Soolstice
+15 Jun 2021 20:46:41,872 [main] - Soolstice user has been created and added in database successfully
+15 Jun 2021 20:46:41,883 [main] - User with username Luntik has been deleted successfully
+15 Jun 2021 20:46:41,884 [main] - Getting user lists
+15 Jun 2021 20:46:41,906 [main] - Getting user with username Meliodas
+15 Jun 2021 20:46:57,837 [main] - Cannot save user
