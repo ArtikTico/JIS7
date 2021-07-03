@@ -1,11 +1,12 @@
-import service.UserServiceImpl;
+import strategies.mappedbysuperclass.entity.Vehicle;
+import strategies.mappedbysuperclass.service.VehicleService;
+import strategies.mappedbysuperclass.service.VehicleServiceImpl;
+
 
 public class Application {
     public static void main(String[] args) {
-        var userService = new UserServiceImpl();
-        var userEntity = userService.create("Alex", "Alexandr", "Alex", "Alex@mail.ru");
-        System.out.println(userEntity);
-
-        userService.findAll().forEach(System.out::println);
+        VehicleService vehicleService = new VehicleServiceImpl();
+        Vehicle e100 = vehicleService.createTruck("E100", 2, 10000, true);
+        Vehicle T54 = vehicleService.createTank("E100", 5, 380);
     }
 }
