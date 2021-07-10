@@ -1,29 +1,27 @@
-package connections.oneToMany;
+package by.jrr.product;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import java.util.Collection;
+import javax.persistence.Table;
+import java.math.BigDecimal;
 
 @Data
 @NoArgsConstructor
 @Entity
-public class Hero {
+@Table(name = "products")
+@AllArgsConstructor
+public class ProductEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String name;
+    private BigDecimal price;
 
-    String name;
-
-    @OneToMany(mappedBy = "hero")
-    private Collection<Ability> abilities;
-
-    public Hero(String name) {
-        this.name = name;
-    }
 }

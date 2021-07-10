@@ -13,7 +13,6 @@ import javax.persistence.ManyToOne;
 @Data
 @NoArgsConstructor
 @Entity
-
 public class Ability {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,6 +21,7 @@ public class Ability {
     private String abilityName;
 
     private Integer power;
+
     @ManyToOne
     @JoinColumn(name = "hero_id")
     private Hero hero;

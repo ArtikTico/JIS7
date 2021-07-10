@@ -1,5 +1,7 @@
 package configuration;
 
+import connections.manyToMany.Child;
+import connections.manyToMany.Toy;
 import connections.oneToMany.Ability;
 import connections.oneToMany.Hero;
 import connections.oneToOne.RecordBook;
@@ -51,6 +53,8 @@ public class HibernateSessionFactoryUtil {
             configuration.addAnnotatedClass(RecordBook.class);
             configuration.addAnnotatedClass(Hero.class);
             configuration.addAnnotatedClass(Ability.class);
+            configuration.addAnnotatedClass(Child.class);
+            configuration.addAnnotatedClass(Toy.class);
             var serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
 
             sessionFactory = configuration.buildSessionFactory(serviceRegistry);

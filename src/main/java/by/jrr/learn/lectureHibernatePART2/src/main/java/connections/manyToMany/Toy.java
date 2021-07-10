@@ -1,29 +1,33 @@
-package connections.oneToMany;
+package connections.manyToMany;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 import java.util.Collection;
 
 @Data
 @NoArgsConstructor
 @Entity
-public class Hero {
+@ToString(exclude = "childs")
+public class Toy {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
+    private String name;
 
-    String name;
+    @ManyToMany(mappedBy = "toys", fetch = FetchType.EAGER)
+    private Collection<Child> childs;
 
-    @OneToMany(mappedBy = "hero")
-    private Collection<Ability> abilities;
-
-    public Hero(String name) {
+    public Toy(String name) {
         this.name = name;
     }
 }
